@@ -1,0 +1,145 @@
+{
+  "hero": {
+    "travelers": 22000,
+    "treasures": 5000,
+    "cities": 3000
+  },
+  "mostPicked": [
+    {
+      "_id": "iowhetoiwio1241823",
+      "name": "Another hosu",
+      "type": "Apartement",
+      "imageUrl": "./images/most-picked-5.jpg",
+      "country": "Indonesia",
+      "city": "Bandung",
+      "price": "89",
+      "unit": "night"
+    },
+    {
+      "_id": "iowhetoiwio1241824",
+      "name": "Apart Of light",
+      "type": "Apartement",
+      "imageUrl": "./images/most-picked-2.jpg",
+      "country": "Indonesia",
+      "city": "Malang",
+      "price": "120",
+      "unit": "night"
+    },
+    {
+      "_id": "iowhetoiwio12418265",
+      "name": "Du u fke wefe",
+      "type": "Apartement",
+      "imageUrl": "./images/most-picked-3.jpg",
+      "country": "Indonesia",
+      "city": "Bandung",
+      "price": "89",
+      "unit": "night"
+    },
+    {
+      "_id": "iowhetoiwio1241823",
+      "name": "Anothwa4tger hosu",
+      "type": "Apartement",
+      "imageUrl": "./images/most-picked-4.jpg",
+      "country": "Indonesia",
+      "city": "Surabaya",
+      "price": "289",
+      "unit": "night"
+    },
+    {
+      "_id": "iowhetoiwio124346798",
+      "name": "be ma teacher",
+      "type": "Apartement",
+      "imageUrl": "./images/most-picked-1.jpg",
+      "country": "Indonesia",
+      "city": "Medan",
+      "price": "79",
+      "unit": "night"
+    }
+  ],
+  "categories": [
+    {
+      "id": "ojiofwehj4tioh231331",
+      "name": "House With Beauty Backyard",
+      "items": [
+        {
+          "_id": "iowhetoiwio124346798",
+          "name": "be ma teacher",
+          "type": "Apartement",
+          "imageUrl": "./images/img-house-1.jpg",
+          "country": "Indonesia",
+          "city": "Medan",
+          "isPopular": false
+        },
+        {
+          "_id": "iowhetoiwio124346798",
+          "name": "be ma teacher",
+          "type": "Apartement",
+          "imageUrl": "./images/img-house-2.jpg",
+          "country": "Indonesia",
+          "city": "Medan",
+          "isPopular": true
+        },
+        {
+          "_id": "iowhetoiwio124346798",
+          "name": "be ma teacher",
+          "type": "Apartement",
+          "imageUrl": "./images/img-house-3.jpg",
+          "country": "Indonesia",
+          "city": "Medan",
+          "isPopular": false
+        },
+        {
+          "_id": "iowhetoiwio124346798",
+          "name": "be ma teacher",
+          "type": "Apartement",
+          "imageUrl": "./images/img-house-4.jpg",
+          "country": "Indonesia",
+          "city": "Medan",
+          "isPopular": false
+        }
+      ]
+    },
+    {
+      "id": "ojiofwehjoh231331",
+      "name": "Apartement With Kitchen Set",
+      "items": [
+        {
+          "_id": "iowhetoiwio124346798",
+          "name": "be ma teacher",
+          "type": "Apartement",
+          "imageUrl": "./images/img-apartement-1.jpg",
+          "country": "Indonesia",
+          "city": "Medan",
+          "isPopular": false
+        },
+        {
+          "_id": "iowhetoiwio124346798",
+          "name": "be ma teacher",
+          "type": "Apartement",
+          "imageUrl": "./images/img-apartement-2.jpg",
+          "country": "Indonesia",
+          "city": "Medan",
+          "isPopular": false
+        },
+        {
+          "_id": "iowhetoiwio124346798",
+          "name": "be ma teacher",
+          "type": "Apartement",
+          "imageUrl": "./images/img-apartement-3.jpg",
+          "country": "Indonesia",
+          "city": "Medan",
+          "isPopular": false
+        },
+        {
+          "_id": "iowhetoiwio124346798",
+          "name": "be ma teacher",
+          "type": "Apartement",
+          "imageUrl": "./images/img-apartement-4.jpg",
+          "country": "Indonesia",
+          "city": "Medan",
+          "isPopular": true
+        }
+      ]
+    }
+  ]
+}
