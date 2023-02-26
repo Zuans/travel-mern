@@ -1,0 +1,24 @@
+@import "../../assets/scss/colorVariables";
+
+.stars {
+  display: inline-flex;
+  min-width: 200px;
+  position: relative;
+
+  .star {
+    position: absolute;
+    display: inline-flex;
+    -webkit-mask-image: url("../../assets/images/icons/ic_star.svg");
+    mask: url("../../assets/images/icons/ic_star.svg") no-repeat center left;
+    mask-size: cover;
+
+    &:not(.placeholder) {
+      background-color: $yellow;
+      z-index: 3;
+    }
+    &.placeholder {
+      background-color: $gray-500;
+      z-index: 1;
+    }
+  }
+}

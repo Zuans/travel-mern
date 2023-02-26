@@ -5,6 +5,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 
+@import "colorVariables";
 @import "functions";
 @import "variables";
 @import "mixins";
@@ -192,7 +193,11 @@ a::hover * {
       color: $white;
       padding: 20px;
       position: absolute;
+      top: 0;
       bottom: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
       width: 100%;
       transform: translateY(0);
       transition: 0.5s transform ease-in-out;
@@ -225,5 +230,41 @@ a::hover * {
         transform: scale(1);
       }
     }
+  }
+}
+
+.testimoni-hero,
+.testimoni-hero img {
+  width: 365px;
+  height: 480px;
+}
+
+footer {
+  border-top: 1px solid $gray-200;
+  padding-top: 50px;
+
+  ul {
+    padding: 0;
+  }
+  .list-group-item {
+    padding: 0.3125rem 0;
+    border: 0;
+    a,
+    span {
+      color: $gray-300;
+      font-weight: 300;
+    }
+    a {
+      @include hover-focus {
+        color: $gray-500;
+      }
+    }
+  }
+
+  .copyrights {
+    color: $gray-500;
+    font-weight: 300;
+    margin: 50px 0;
+    text-align: center;
   }
 }

@@ -1,6 +1,6 @@
 import React from "react";
 
-import Button from "elements/button";
+import Button from "elements/Button";
 
 export default function Categories({ data }) {
   return data.map((category, categoryIndex) => {

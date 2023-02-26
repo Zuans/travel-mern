@@ -1,6 +1,6 @@
 import React from "react";
 
-import Button from "elements/button";
+import Button from "elements/Button";
 
 import imgHero from "assets/images/img-hero.jpg";
 import imgHero_ from "assets/images/img-hero-frame.jpg";

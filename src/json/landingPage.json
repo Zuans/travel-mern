@@ -141,5 +141,14 @@
         }
       ]
     }
-  ]
+  ],
+  "testimonial": {
+    "_id": "iowhetoiwio1243455",
+    "name": "Happy Family",
+    "rate": 4.5,
+    "imageUrl": "./images/img-testimoni-landing.jpg",
+    "content": "What a great trip with my family and i should try again next time soon",
+    "familyName": "Roberto Carlos",
+    "familyOccupation": "UI Designer"
+  }
 }
