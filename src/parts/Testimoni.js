@@ -1,4 +1,5 @@
 import React from "react";
+import { Fade } from "react-awesome-reveal";
 
 import Star from "elements/Star";
 import Button from "elements/Button";
@@ -16,41 +17,45 @@ export default function Testimoni({ data }) {
             className="testimoni-hero"
             style={{ margin: `30px 0px 0px 30px ` }}
           >
-            <img
-              src={testimoniAccent}
-              alt="Testimoni frame"
-              className="position-absolute"
-              style={{ margin: `-30px 0px 0px -30px ` }}
-            />
-            <img
-              src={data.imageUrl}
-              alt={data.name}
-              className="position-absolute"
-              style={{ zIndex: 1 }}
-            />
+            <Fade>
+              <img
+                src={testimoniAccent}
+                alt="Testimoni frame"
+                className="position-absolute"
+                style={{ margin: `-30px 0px 0px -30px ` }}
+              />
+              <img
+                src={data.imageUrl}
+                alt={data.name}
+                className="position-absolute"
+                style={{ zIndex: 1 }}
+              />
+            </Fade>
           </div>
         </div>
         <div className="col">
-          <h4 style={{ marginBottom: 40 }}>{data.name}</h4>
-          <Star value={data.rate} height={30} width={30} spacing={5}></Star>
-          <h5 className="h2 font-weight-light line-height-2 my-3">
-            {data.content}
-          </h5>
-          <span className="text-gray-500">
-            {data.familyName}, {data.familyOccupation}
-          </span>
-          <div>
-            <Button
-              href={`/testimonial/${data._id}`}
-              className="btn px-5"
-              isPrimary
-              hasShadow
-              type="link"
-              style={{ marginTop: 40 }}
-            >
-              Read Their Story
-            </Button>
-          </div>
+          <Fade direction="right">
+            <h4 style={{ marginBottom: 40 }}>{data.name}</h4>
+            <Star value={data.rate} height={30} width={30} spacing={5}></Star>
+            <h5 className="h2 font-weight-light line-height-2 my-3">
+              {data.content}
+            </h5>
+            <span className="text-gray-500">
+              {data.familyName}, {data.familyOccupation}
+            </span>
+            <div>
+              <Button
+                href={`/testimonial/${data._id}`}
+                className="btn px-5"
+                isPrimary
+                hasShadow
+                type="link"
+                style={{ marginTop: 40 }}
+              >
+                Read Their Story
+              </Button>
+            </div>
+          </Fade>
         </div>
       </div>
     </section>

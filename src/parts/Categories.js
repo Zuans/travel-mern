@@ -1,4 +1,5 @@
 import React from "react";
+import { Fade } from "react-awesome-reveal";
 
 import Button from "elements/Button";
 
@@ -21,35 +22,37 @@ export default function Categories({ data }) {
                   className="item column-3 row-1"
                   key={`category-${categoryIndex}-item-${itemIndex}`}
                 >
-                  <div className="card">
-                    {item.isPopular ? (
-                      <div className="tag">
-                        Popular{" "}
-                        <span className="fon-weight-light">Choiche</span>
+                  <Fade direction="right" delay={300 * itemIndex}>
+                    <div className="card">
+                      {item.isPopular ? (
+                        <div className="tag">
+                          Popular{" "}
+                          <span className="fon-weight-light">Choiche</span>
+                        </div>
+                      ) : (
+                        ""
+                      )}
+                      <figure className="img-wrapper" style={{ height: 180 }}>
+                        <img
+                          src={item.imageUrl}
+                          alt={item.name}
+                          className="img-cover"
+                        />
+                      </figure>
+                      <div className="meta-wrapp">
+                        <Button
+                          type="link"
+                          href={`/properties/${item._id}`}
+                          className="strecthed-link d-block"
+                        >
+                          <h5 className="h4 text-dark">{item.name}</h5>
+                        </Button>
+                        <span className="font-weight-light text-gray-500">
+                          {item.city}, {item.country}
+                        </span>
                       </div>
-                    ) : (
-                      ""
-                    )}
-                    <figure className="img-wrapper" style={{ height: 180 }}>
-                      <img
-                        src={item.imageUrl}
-                        alt={item.name}
-                        className="img-cover"
-                      />
-                    </figure>
-                    <div className="meta-wrapp">
-                      <Button
-                        type="link"
-                        href={`/properties/${item._id}`}
-                        className="strecthed-link d-block"
-                      >
-                        <h5 className="h4 text-dark">{item.name}</h5>
-                      </Button>
-                      <span className="font-weight-light text-gray-500">
-                        {item.city}, {item.country}
-                      </span>
                     </div>
-                  </div>
+                  </Fade>
                 </div>
               );
             })
